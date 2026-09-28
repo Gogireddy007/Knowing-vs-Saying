@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this software or the Cart-State dataset, please cite the paper."
+title: "Knowing vs. Saying: A Calibrated Dissociation Test for LLM Agents"
+authors:
+  - given-names: "Yugandhar Reddy"
+    family-names: "Gogireddy"
+    affiliation: "University of Southern California"
+    email: "gogiredd@usc.edu"
+date-released: "2026-06-24"
+license: MIT
+repository-code: "https://anonymous.4open.science/r/dissociation-test"
+abstract: >
+  We introduce the dissociation test, a per-timestep diagnostic that
+  decomposes LLM-agent failures into three mechanistically distinct
+  failure modes (world-model, deployment, readout-bottleneck) via a
+  signed gap between linear/MLP probe fidelity and behavioural
+  accuracy, calibrated by a permutation null. Released artifacts:
+  Cart-State (n=200 trajectories with exact ground truth), MiniGrid
+  trajectories, hidden-state caches, probe weights, and intervention
+  scripts.
+keywords:
+  - llm-agents
+  - interpretability
+  - probing
+  - mechanistic-interpretability
+  - evaluation
+  - world-model
+  - dissociation
+preferred-citation:
+  type: article
+  title: "Knowing vs. Saying: A Calibrated Dissociation Test for LLM Agents"
+  authors:
+    - given-names: "Yugandhar Reddy"
+      family-names: "Gogireddy"
+  year: 2026

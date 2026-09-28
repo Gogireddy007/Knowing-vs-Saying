@@ -1,0 +1,158 @@
+[
+  {
+    "model": "gpt2",
+    "sweep": {
+      "last-linear": {
+        "F_mean": 0.42622373949579834,
+        "B_mean": 0.6532440476190475,
+        "G_mean": -0.2270203081232493,
+        "tau": 0.2608503151260504
+      },
+      "last-mlp": {
+        "F_mean": 0.42205940709617185,
+        "B_mean": 0.6532440476190475,
+        "G_mean": -0.23118464052287582,
+        "tau": 0.266405929038282
+      },
+      "mean-linear": {
+        "F_mean": 0.40662173202614377,
+        "B_mean": 0.6532440476190475,
+        "G_mean": -0.24662231559290385,
+        "tau": 0.27688725490196076
+      },
+      "attn-linear": {
+        "F_mean": 0.3806220821661998,
+        "B_mean": 0.6532440476190475,
+        "G_mean": -0.2726219654528478,
+        "tau": 0.29271376050420167
+      }
+    },
+    "controls": {
+      "majority_class_B": 0.4886904761904762,
+      "B_mean": 0.6532440476190475,
+      "B_beats_majority": true,
+      "excl_zero_default": {
+        "n": 658,
+        "F_mean": 0.23708206686930092,
+        "B_mean": 0.41185410334346506,
+        "G_mean": -0.17477203647416414
+      },
+      "tau_stratified": 0.2702334267040149,
+      "majority_class_B_legacy_no_prices": 0.7532110091743119,
+      "mi_lower_bound_norm_STALE_needs_rerun": 0.0,
+      "mi_lower_bound_note": "The MI lower bound formula was fixed in analysis/gap.py (fano_mi_lower_bound) to use per-variable-type support sizes and correct normalisation instead of a single hardcoded |S|~8 that silently clipped to 0 in every prior run. Recomputing the corrected value requires re-running scripts/run_upgrades.py with the fixed code against real trained probes (torch + sklearn), which this environment cannot execute. The stale pre-fix value is preserved above for provenance, not for use."
+    },
+    "patch": {
+      "layer": 7,
+      "baseline_B": 0.40098817304699663,
+      "nearest_state_donor_B": 0.3857765328353564,
+      "random_state_donor_B": 0.3765172735760971,
+      "delta_nearest": -0.015211640211640232,
+      "delta_random": -0.024470899470899532,
+      "nearest_beats_random": true,
+      "n": 12
+    },
+    "elapsed_s": 766.4802479743958
+  },
+  {
+    "model": "EleutherAI/pythia-410m",
+    "sweep": {
+      "last-linear": {
+        "F_mean": 0.41317226890756303,
+        "B_mean": 0.6492466153127918,
+        "G_mean": -0.23607434640522876,
+        "tau": 0.2682247899159664
+      },
+      "last-mlp": {
+        "F_mean": 0.4062622549019608,
+        "B_mean": 0.6492466153127918,
+        "G_mean": -0.242984360410831,
+        "tau": 0.2734866946778712
+      },
+      "mean-linear": {
+        "F_mean": 0.41958566760037347,
+        "B_mean": 0.6492466153127918,
+        "G_mean": -0.2296609477124183,
+        "tau": 0.26082008636788045
+      },
+      "attn-linear": {
+        "F_mean": 0.4218522408963586,
+        "B_mean": 0.6492466153127918,
+        "G_mean": -0.22739437441643323,
+        "tau": 0.26370278944911296
+      }
+    },
+    "controls": {
+      "majority_class_B": 0.4886904761904762,
+      "B_mean": 0.6492466153127918,
+      "B_beats_majority": true,
+      "excl_zero_default": {
+        "n": 658,
+        "F_mean": 0.24316109422492402,
+        "B_mean": 0.4012158054711246,
+        "G_mean": -0.1580547112462006
+      },
+      "tau_stratified": 0.252046568627451,
+      "majority_class_B_legacy_no_prices": 0.7532110091743119,
+      "mi_lower_bound_norm_STALE_needs_rerun": 0.0,
+      "mi_lower_bound_note": "The MI lower bound formula was fixed in analysis/gap.py (fano_mi_lower_bound) to use per-variable-type support sizes and correct normalisation instead of a single hardcoded |S|~8 that silently clipped to 0 in every prior run. Recomputing the corrected value requires re-running scripts/run_upgrades.py with the fixed code against real trained probes (torch + sklearn), which this environment cannot execute. The stale pre-fix value is preserved above for provenance, not for use."
+    },
+    "patch": null,
+    "elapsed_s": 7167.253297805786
+  },
+  {
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "sweep": {
+      "last-linear": {
+        "F_mean": 0.3910224089635855,
+        "B_mean": 0.6047963352007469,
+        "G_mean": -0.2137739262371615,
+        "tau": 0.27656973622782444
+      },
+      "last-mlp": {
+        "F_mean": 0.36973914565826327,
+        "B_mean": 0.6047963352007469,
+        "G_mean": -0.23505718954248364,
+        "tau": 0.2872099673202615
+      },
+      "mean-linear": {
+        "F_mean": 0.3908706816059757,
+        "B_mean": 0.6047963352007469,
+        "G_mean": -0.21392565359477125,
+        "tau": 0.2728869631185808
+      },
+      "attn-linear": {
+        "F_mean": 0.41350840336134453,
+        "B_mean": 0.6047963352007469,
+        "G_mean": -0.19128793183940243,
+        "tau": 0.2568458800186742
+      }
+    },
+    "controls": {
+      "majority_class_B": 0.4886904761904762,
+      "B_mean": 0.6047963352007469,
+      "B_beats_majority": true,
+      "excl_zero_default": {
+        "n": 658,
+        "F_mean": 0.20212765957446807,
+        "B_mean": 0.648936170212766,
+        "G_mean": -0.44680851063829785
+      },
+      "tau_stratified": 0.27740890522875816,
+      "majority_class_B_legacy_no_prices": 0.7532110091743119,
+      "mi_lower_bound_norm_STALE_needs_rerun": 0.0,
+      "mi_lower_bound_note": "The MI lower bound formula was fixed in analysis/gap.py (fano_mi_lower_bound) to use per-variable-type support sizes and correct normalisation instead of a single hardcoded |S|~8 that silently clipped to 0 in every prior run. Recomputing the corrected value requires re-running scripts/run_upgrades.py with the fixed code against real trained probes (torch + sklearn), which this environment cannot execute. The stale pre-fix value is preserved above for provenance, not for use."
+    },
+    "patch": {
+      "layer": 11,
+      "baseline_B": 0.2773809523809524,
+      "nearest_state_donor_B": 0.2639550264550265,
+      "random_state_donor_B": 0.2639550264550265,
+      "delta_nearest": -0.013425925925925897,
+      "delta_random": -0.013425925925925897,
+      "nearest_beats_random": false,
+      "n": 12
+    },
+    "elapsed_s": 1735.0870850086212
+  }
+]

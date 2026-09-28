@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pt
+*.pkl
+.DS_Store
+results/cache/
+data/raw/
+.venv/
+.ipynb_checkpoints/
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.synctex.gz
+paper/

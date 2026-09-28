@@ -1,0 +1,14 @@
+# Tested environment. Lower bounds reflect features used; exact
+# versions in requirements-lock.txt reproduce the numbers in the paper.
+torch>=2.1
+transformers>=4.40
+scikit-learn>=1.3
+numpy>=1.26
+scipy>=1.11
+pandas>=2.1
+matplotlib>=3.8
+seaborn>=0.13
+tqdm>=4.66
+pytest>=7.4
+minigrid>=2.3
+gymnasium>=0.29
