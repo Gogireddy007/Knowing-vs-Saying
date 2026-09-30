@@ -143,12 +143,6 @@ and the same numbers, so you can check your run against what's already in
   (no GPU cluster required) — it was originally developed and timed on an Apple
   M2 with the Metal backend.
 
-## Citing this work
-
-See [`CITATION.cff`](CITATION.cff), or cite the paper directly:
-
-> Yugandhar Reddy Gogireddy. *Knowing vs. Saying: A Calibrated Dissociation Test
-> for LLM Agents.* 2026.
 
 ## License
 
