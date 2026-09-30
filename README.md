@@ -3,9 +3,6 @@
 **A calibrated way to tell whether an LLM agent's failures come from a broken internal
 world model, or from a model that knows the right answer but doesn't say it.**
 
-📄 Paper: [`paper/main.pdf`](paper/main.pdf) — *Knowing vs. Saying: A Calibrated
-Dissociation Test for LLM Agents*
-
 ---
 
 ## The problem this solves
